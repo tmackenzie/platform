@@ -16,10 +16,5 @@ module "vpc" {
   enable_dns_hostnames = true
   enable_dns_support   = true
   enable_dhcp_options  = true
-  dhcp_options_domain_name = local.private_domain_name
-
-  tags = {
-    Terraform = "true"
-    Environment = "dev"
-  }
+  dhcp_options_domain_name = var.private_domain_name
 }
