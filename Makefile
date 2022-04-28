@@ -9,3 +9,10 @@ apply:
 	tfswitch
 	terraform init -input=false
 	terraform apply -input=false -no-color -compact-warnings -auto-approve
+
+destroy:
+	tfswitch
+	terraform init -input=false
+	terraform destroy -input=false -no-color -compact-warnings
+
+
